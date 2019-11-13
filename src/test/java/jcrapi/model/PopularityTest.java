@@ -26,34 +26,34 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class PopularityTest {
 
-    private Popularity unitUnderTest;
+  private Popularity unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new Popularity();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new Popularity();
+  }
 
-    @Test
-    public void shouldGetSetHits() {
-        String expected = "astring";
-        unitUnderTest.setHits(expected);
-        assertEquals(expected, unitUnderTest.getHits());
-    }
+  @Test
+  public void shouldGetSetHits() {
+    String expected = "astring";
+    unitUnderTest.setHits(expected);
+    assertEquals(expected, unitUnderTest.getHits());
+  }
 
-    @Test
-    public void shouldGetSetHitsPerDayAvg() {
-        double expected = 1.41;
-        unitUnderTest.setHitsPerDayAvg(expected);
-        assertEquals(expected, unitUnderTest.getHitsPerDayAvg(), 0.0);
-    }
+  @Test
+  public void shouldGetSetHitsPerDayAvg() {
+    double expected = 1.41;
+    unitUnderTest.setHitsPerDayAvg(expected);
+    assertEquals(expected, unitUnderTest.getHitsPerDayAvg(), 0.0);
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setHits("astring");
-        unitUnderTest.setHitsPerDayAvg(1.41);
-        String expected = "Popularity(hits=astring, hitsPerDayAvg=1.41)";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setHits("astring");
+    unitUnderTest.setHitsPerDayAvg(1.41);
+    String expected = "Popularity(hits=astring, hitsPerDayAvg=1.41)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

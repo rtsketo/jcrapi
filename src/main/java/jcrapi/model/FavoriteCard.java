@@ -28,38 +28,65 @@ import lombok.ToString;
 @ToString
 public class FavoriteCard {
 
-    @SerializedName("id")
-    private int id;
+  @SerializedName("id")
+  private int id;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("maxLevel")
-    private int maxLevel;
+  @SerializedName("minLevel")
+  private int minLevel;
 
-    @Deprecated
-    @SerializedName("iconUrls")
-    private IconUrls iconUrls;
+  @SerializedName("maxLevel")
+  private int maxLevel;
 
-    @SerializedName("icon")
-    private String icon;
+  @Deprecated
+  @SerializedName("iconUrls")
+  private IconUrls iconUrls;
 
-    @SerializedName("key")
-    private String key;
+  @SerializedName("icon")
+  private String icon;
 
-    @SerializedName("elixir")
-    private int elixir;
+  @SerializedName("key")
+  private String key;
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("elixir")
+  private int elixir;
 
-    @SerializedName("rarity")
-    private String rarity;
+  @SerializedName("type")
+  private String type;
 
-    @SerializedName("arena")
-    private int arena;
+  @SerializedName("rarity")
+  private String rarity;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("arena")
+  private int arena;
+
+  @SerializedName("description")
+  private String description;
+
+  @SerializedName("level")
+  private int level;
+
+  @SerializedName("displayLevel")
+  private int displayLevel;
+
+  @SerializedName("starLevel")
+  private int starLevel;
+
+  @SerializedName("count")
+  private int count;
+
+  @SerializedName("requiredForUpgrade")
+  private int requiredForUpgrade;
+
+  @SerializedName("leftToUpgrade")
+  private int leftToUpgrade;
+
+  @SerializedName("readyForUpgrade")
+  private boolean readyForUpgrade;
+
+  @SerializedName("maxed")
+  private boolean maxed;
 
 }

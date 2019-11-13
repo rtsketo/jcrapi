@@ -26,34 +26,34 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class LastBattleTest {
 
-    private LastBattle unitUnderTest;
+  private LastBattle unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new LastBattle();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new LastBattle();
+  }
 
-    @Test
-    public void shouldGetSetType() {
-        String expected = "astring";
-        unitUnderTest.setType(expected);
-        assertEquals(expected, unitUnderTest.getType());
-    }
+  @Test
+  public void shouldGetSetType() {
+    String expected = "astring";
+    unitUnderTest.setType(expected);
+    assertEquals(expected, unitUnderTest.getType());
+  }
 
-    @Test
-    public void shouldGetSetTime() {
-        long expected = 4711L;
-        unitUnderTest.setTime(expected);
-        assertEquals(expected, unitUnderTest.getTime());
-    }
+  @Test
+  public void shouldGetSetTime() {
+    long expected = 4711L;
+    unitUnderTest.setTime(expected);
+    assertEquals(expected, unitUnderTest.getTime());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setType("astring");
-        unitUnderTest.setTime(4711L);
-        String expected = "LastBattle(type=astring, time=4711)";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setType("astring");
+    unitUnderTest.setTime(4711L);
+    String expected = "LastBattle(type=astring, time=4711)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

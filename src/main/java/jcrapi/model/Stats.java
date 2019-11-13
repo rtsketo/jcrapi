@@ -28,34 +28,34 @@ import lombok.ToString;
 @ToString
 public class Stats {
 
-    @SerializedName("tournamentCardsWon")
-    private int tournamentCardsWon;
+  @SerializedName("tournamentCardsWon")
+  private int tournamentCardsWon;
 
-    @SerializedName("maxTrophies")
-    private int maxTrophies;
+  @SerializedName("maxTrophies")
+  private int maxTrophies;
 
-    @SerializedName("threeCrownWins")
-    private int threeCrownWins;
+  @SerializedName("threeCrownWins")
+  private int threeCrownWins;
 
-    @SerializedName("cardsFound")
-    private int cardsFound;
+  @SerializedName("cardsFound")
+  private int cardsFound;
 
-    @SerializedName("favoriteCard")
-    private FavoriteCard favoriteCard;
+  @SerializedName("favoriteCard")
+  private FavoriteCard favoriteCard;
 
-    @SerializedName("totalDonations")
-    private int totalDonations;
+  @SerializedName("totalDonations")
+  private int totalDonations;
 
-    @SerializedName("challengeMaxWins")
-    private int challengeMaxWins;
+  @SerializedName("challengeMaxWins")
+  private int challengeMaxWins;
 
-    @SerializedName("challengeCardsWon")
-    private int challengeCardsWon;
+  @SerializedName("challengeCardsWon")
+  private int challengeCardsWon;
 
-    @SerializedName("level")
-    private int level;
+  @SerializedName("level")
+  private int level;
 
-    @SerializedName("clanCardsCollected")
-    private int clanCardsCollected;
+  @SerializedName("clanCardsCollected")
+  private int clanCardsCollected;
 
 }

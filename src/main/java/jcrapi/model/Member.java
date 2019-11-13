@@ -28,43 +28,47 @@ import lombok.ToString;
 @ToString
 public class Member {
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("rank")
-    private int rank;
+  @SerializedName("rank")
+  private int rank;
 
-    @SerializedName("previousRank")
-    private int previousRank;
+  @SerializedName("previousRank")
+  private int previousRank;
 
-    @SerializedName("role")
-    private String role;
+  @SerializedName("role")
+  private String role;
 
-    @SerializedName("expLevel")
-    private int expLevel;
+  @SerializedName("expLevel")
+  private int expLevel;
 
-    @SerializedName("trophies")
-    private int trophies;
+  @SerializedName("trophies")
+  private int trophies;
 
-    @SerializedName("clanChestCrowns")
-    private int clanChestCrowns;
+  @Deprecated
+  @SerializedName("clanChestCrowns")
+  private int clanChestCrowns;
 
-    @SerializedName("donations")
-    private int donations;
+  @SerializedName("donations")
+  private int donations;
 
-    @SerializedName("donationsReceived")
-    private int donationsReceived;
+  @SerializedName("donationsReceived")
+  private int donationsReceived;
 
-    @SerializedName("donationsDelta")
-    private int donationsDelta;
+  @SerializedName("donationsDelta")
+  private int donationsDelta;
 
-    @SerializedName("donationsPercent")
-    private double donationsPercent;
+  @SerializedName("donationsPercent")
+  private double donationsPercent;
 
-    @SerializedName("arena")
-    private Arena arena;
+  @SerializedName("arena")
+  private Arena arena;
+
+  @SerializedName("lastSeen")
+  private String lastSeen;
 
 }

@@ -26,50 +26,58 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class ClanWarLogTest {
 
-    private ClanWarLog unitUnderTest;
+  private ClanWarLog unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new ClanWarLog();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new ClanWarLog();
+  }
 
-    @Test
-    public void shouldGetSetCreatedDate() {
-        long expected = 4711L;
-        unitUnderTest.setCreatedDate(expected);
-        assertEquals(expected, unitUnderTest.getCreatedDate());
-    }
+  @Test
+  public void shouldGetSetCreatedDate() {
+    long expected = 4711L;
+    unitUnderTest.setCreatedDate(expected);
+    assertEquals(expected, unitUnderTest.getCreatedDate());
+  }
 
-    @Test
-    public void shouldGetSetSeasonNumber() {
-        int expected = 815;
-        unitUnderTest.setSeasonNumber(expected);
-        assertEquals(expected, unitUnderTest.getSeasonNumber());
-    }
+  @Test
+  public void shouldGetSetSeasonNumber() {
+    int expected = 815;
+    unitUnderTest.setSeasonNumber(expected);
+    assertEquals(expected, unitUnderTest.getSeasonNumber());
+  }
 
-    @Test
-    public void shouldGetSetParticipants() {
-        java.util.List<ClanWarLogParticipant> expected = new java.util.ArrayList<ClanWarLogParticipant>();
-        unitUnderTest.setParticipants(expected);
-        assertEquals(expected, unitUnderTest.getParticipants());
-    }
+  @Test
+  public void shouldGetSetParticipants() {
+    java.util.List<ClanWarLogParticipant> expected = new java.util.ArrayList<ClanWarLogParticipant>();
+    unitUnderTest.setParticipants(expected);
+    assertEquals(expected, unitUnderTest.getParticipants());
+  }
 
-    @Test
-    public void shouldGetSetStandings() {
-        java.util.List<ClanWarLogStanding> expected = new java.util.ArrayList<ClanWarLogStanding>();
-        unitUnderTest.setStandings(expected);
-        assertEquals(expected, unitUnderTest.getStandings());
-    }
+  @Test
+  public void shouldGetSetStandings() {
+    java.util.List<ClanWarLogStanding> expected = new java.util.ArrayList<ClanWarLogStanding>();
+    unitUnderTest.setStandings(expected);
+    assertEquals(expected, unitUnderTest.getStandings());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setCreatedDate(4711L);
-        unitUnderTest.setSeasonNumber(815);
-        unitUnderTest.setParticipants(new java.util.ArrayList<ClanWarLogParticipant>());
-        unitUnderTest.setStandings(new java.util.ArrayList<ClanWarLogStanding>());
-        String expected = "ClanWarLog(createdDate=4711, seasonNumber=815, participants=" + new java.util.ArrayList<ClanWarLogParticipant>() + ", standings=" + new java.util.ArrayList<ClanWarLogStanding>() + ")";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldGetSetWarEndTime() {
+    String expected = "astring";
+    unitUnderTest.setWarEndTime(expected);
+    assertEquals(expected, unitUnderTest.getWarEndTime());
+  }
+
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setCreatedDate(4711L);
+    unitUnderTest.setSeasonNumber(815);
+    unitUnderTest.setParticipants(new java.util.ArrayList<ClanWarLogParticipant>());
+    unitUnderTest.setStandings(new java.util.ArrayList<ClanWarLogStanding>());
+    unitUnderTest.setWarEndTime("astring");
+    String expected = "ClanWarLog(createdDate=4711, seasonNumber=815, participants=" + new java.util.ArrayList<ClanWarLogParticipant>() + ", standings=" + new java.util.ArrayList<ClanWarLogStanding>() + ", warEndTime=astring)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

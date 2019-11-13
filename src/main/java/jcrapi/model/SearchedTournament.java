@@ -28,55 +28,55 @@ import lombok.ToString;
 @ToString
 public class SearchedTournament {
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("type")
+  private String type;
 
-    @SerializedName("status")
-    private String status;
+  @SerializedName("status")
+  private String status;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    @Deprecated
-    @SerializedName("maxCapacity")
-    private int maxCapacity;
+  @Deprecated
+  @SerializedName("maxCapacity")
+  private int maxCapacity;
 
-    @SerializedName("maxPlayers")
-    private int maxPlayers;
+  @SerializedName("maxPlayers")
+  private int maxPlayers;
 
-    @Deprecated
-    @SerializedName("preparationDuration")
-    private int preparationDuration;
+  @Deprecated
+  @SerializedName("preparationDuration")
+  private int preparationDuration;
 
-    @SerializedName("prepTime")
-    private int prepTime;
+  @SerializedName("prepTime")
+  private int prepTime;
 
-    @SerializedName("duration")
-    private int duration;
+  @SerializedName("duration")
+  private int duration;
 
-    @SerializedName("createTime")
-    private long createTime;
+  @SerializedName("createTime")
+  private long createTime;
 
-    @SerializedName("startTime")
-    private long startTime;
+  @SerializedName("startTime")
+  private long startTime;
 
-    @SerializedName("endTime")
-    private long endTime;
+  @SerializedName("endTime")
+  private long endTime;
 
-    @Deprecated
-    @SerializedName("playerCount")
-    private int playerCount;
+  @Deprecated
+  @SerializedName("playerCount")
+  private int playerCount;
 
-    @SerializedName("currentPlayers")
-    private int currentPlayers;
+  @SerializedName("currentPlayers")
+  private int currentPlayers;
 
-    @SerializedName("members")
-    private java.util.List<TournamentParticipant> members;
+  @SerializedName("members")
+  private java.util.List<TournamentParticipant> members;
 
 }

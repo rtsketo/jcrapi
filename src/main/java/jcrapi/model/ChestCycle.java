@@ -28,22 +28,26 @@ import lombok.ToString;
 @ToString
 public class ChestCycle {
 
-    @SerializedName("upcoming")
-    private java.util.List<String> upcoming;
+  @SerializedName("upcoming")
+  private java.util.List<String> upcoming;
 
-    @SerializedName("superMagical")
-    private int superMagical;
+  @Deprecated
+  @SerializedName("superMagical")
+  private int superMagical;
 
-    @SerializedName("magical")
-    private int magical;
+  @SerializedName("megaLightning")
+  private int megaLightning;
 
-    @SerializedName("legendary")
-    private int legendary;
+  @SerializedName("magical")
+  private int magical;
 
-    @SerializedName("epic")
-    private int epic;
+  @SerializedName("legendary")
+  private int legendary;
 
-    @SerializedName("giant")
-    private int giant;
+  @SerializedName("epic")
+  private int epic;
+
+  @SerializedName("giant")
+  private int giant;
 
 }

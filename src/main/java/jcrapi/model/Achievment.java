@@ -28,19 +28,19 @@ import lombok.ToString;
 @ToString
 public class Achievment {
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("stars")
-    private int stars;
+  @SerializedName("stars")
+  private int stars;
 
-    @SerializedName("value")
-    private int value;
+  @SerializedName("value")
+  private int value;
 
-    @SerializedName("target")
-    private int target;
+  @SerializedName("target")
+  private int target;
 
-    @SerializedName("info")
-    private String info;
+  @SerializedName("info")
+  private String info;
 
 }

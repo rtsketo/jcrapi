@@ -26,42 +26,42 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class LocationTest {
 
-    private Location unitUnderTest;
+  private Location unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new Location();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new Location();
+  }
 
-    @Test
-    public void shouldGetSetName() {
-        String expected = "astring";
-        unitUnderTest.setName(expected);
-        assertEquals(expected, unitUnderTest.getName());
-    }
+  @Test
+  public void shouldGetSetName() {
+    String expected = "astring";
+    unitUnderTest.setName(expected);
+    assertEquals(expected, unitUnderTest.getName());
+  }
 
-    @Test
-    public void shouldGetSetCountry() {
-        boolean expected = false;
-        unitUnderTest.setCountry(expected);
-        assertEquals(expected, unitUnderTest.isCountry());
-    }
+  @Test
+  public void shouldGetSetCountry() {
+    boolean expected = false;
+    unitUnderTest.setCountry(expected);
+    assertEquals(expected, unitUnderTest.isCountry());
+  }
 
-    @Test
-    public void shouldGetSetCode() {
-        String expected = "astring";
-        unitUnderTest.setCode(expected);
-        assertEquals(expected, unitUnderTest.getCode());
-    }
+  @Test
+  public void shouldGetSetCode() {
+    String expected = "astring";
+    unitUnderTest.setCode(expected);
+    assertEquals(expected, unitUnderTest.getCode());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setName("astring");
-        unitUnderTest.setCountry(false);
-        unitUnderTest.setCode("astring");
-        String expected = "Location(name=astring, Country=false, code=astring)";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setName("astring");
+    unitUnderTest.setCountry(false);
+    unitUnderTest.setCode("astring");
+    String expected = "Location(name=astring, Country=false, code=astring)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

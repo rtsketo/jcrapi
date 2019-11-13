@@ -26,12 +26,12 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class EndpointsTest {
 
-    private Endpoints unitUnderTest;
+  private Endpoints unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new Endpoints();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new Endpoints();
+  }
 
 
 }

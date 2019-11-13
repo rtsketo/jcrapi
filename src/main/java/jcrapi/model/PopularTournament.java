@@ -28,10 +28,19 @@ import lombok.ToString;
 @ToString
 public class PopularTournament extends Tournament {
 
-    @SerializedName("popularity")
-    private Popularity popularity;
+  @SerializedName("popularity")
+  private Popularity popularity;
 
-    @SerializedName("playerCount")
-    private int playerCount;
+  @SerializedName("playerCount")
+  private int playerCount;
+
+  @SerializedName("currentPlayers")
+  private int currentPlayers;
+
+  @SerializedName("updatedAt")
+  private long updatedAt;
+
+  @SerializedName("open")
+  private boolean open;
 
 }

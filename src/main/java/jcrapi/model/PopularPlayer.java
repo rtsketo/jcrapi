@@ -28,7 +28,7 @@ import lombok.ToString;
 @ToString
 public class PopularPlayer extends Profile {
 
-    @SerializedName("popularity")
-    private Popularity popularity;
+  @SerializedName("popularity")
+  private Popularity popularity;
 
 }

@@ -28,13 +28,16 @@ import lombok.ToString;
 @ToString
 public class Tracking {
 
-    @SerializedName("active")
-    private boolean active;
+  @SerializedName("active")
+  private boolean active;
 
-    @SerializedName("available")
-    private boolean available;
+  @SerializedName("available")
+  private boolean available;
 
-    @SerializedName("snapshotCount")
-    private int snapshotCount;
+  @SerializedName("legible")
+  private boolean legible;
+
+  @SerializedName("snapshotCount")
+  private int snapshotCount;
 
 }

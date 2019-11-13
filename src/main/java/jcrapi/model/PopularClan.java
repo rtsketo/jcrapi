@@ -28,7 +28,7 @@ import lombok.ToString;
 @ToString
 public class PopularClan extends Clan {
 
-    @SerializedName("popularity")
-    private Popularity popularity;
+  @SerializedName("popularity")
+  private Popularity popularity;
 
 }

@@ -26,18 +26,18 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class KnownTournamentTest {
 
-    private KnownTournament unitUnderTest;
+  private KnownTournament unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new KnownTournament();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new KnownTournament();
+  }
 
-    @Test
-    public void shouldToString() {
-        String expected = "KnownTournament()";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldToString() {
+    String expected = "KnownTournament()";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

@@ -26,34 +26,58 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class PopularTournamentTest {
 
-    private PopularTournament unitUnderTest;
+  private PopularTournament unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new PopularTournament();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new PopularTournament();
+  }
 
-    @Test
-    public void shouldGetSetPopularity() {
-        Popularity expected = new Popularity();
-        unitUnderTest.setPopularity(expected);
-        assertEquals(expected, unitUnderTest.getPopularity());
-    }
+  @Test
+  public void shouldGetSetPopularity() {
+    Popularity expected = new Popularity();
+    unitUnderTest.setPopularity(expected);
+    assertEquals(expected, unitUnderTest.getPopularity());
+  }
 
-    @Test
-    public void shouldGetSetPlayerCount() {
-        int expected = 815;
-        unitUnderTest.setPlayerCount(expected);
-        assertEquals(expected, unitUnderTest.getPlayerCount());
-    }
+  @Test
+  public void shouldGetSetPlayerCount() {
+    int expected = 815;
+    unitUnderTest.setPlayerCount(expected);
+    assertEquals(expected, unitUnderTest.getPlayerCount());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setPopularity(new Popularity());
-        unitUnderTest.setPlayerCount(815);
-        String expected = "PopularTournament(popularity=" + new Popularity() + ", playerCount=815)";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldGetSetCurrentPlayers() {
+    int expected = 815;
+    unitUnderTest.setCurrentPlayers(expected);
+    assertEquals(expected, unitUnderTest.getCurrentPlayers());
+  }
+
+  @Test
+  public void shouldGetSetUpdatedAt() {
+    long expected = 4711L;
+    unitUnderTest.setUpdatedAt(expected);
+    assertEquals(expected, unitUnderTest.getUpdatedAt());
+  }
+
+  @Test
+  public void shouldGetSetOpen() {
+    boolean expected = false;
+    unitUnderTest.setOpen(expected);
+    assertEquals(expected, unitUnderTest.isOpen());
+  }
+
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setPopularity(new Popularity());
+    unitUnderTest.setPlayerCount(815);
+    unitUnderTest.setCurrentPlayers(815);
+    unitUnderTest.setUpdatedAt(4711L);
+    unitUnderTest.setOpen(false);
+    String expected = "PopularTournament(popularity=" + new Popularity() + ", playerCount=815, currentPlayers=815, updatedAt=4711, open=false)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

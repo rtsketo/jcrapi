@@ -28,25 +28,25 @@ import lombok.ToString;
 @ToString
 public class ProfileClan {
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("role")
-    private String role;
+  @SerializedName("role")
+  private String role;
 
-    @SerializedName("donations")
-    private int donations;
+  @SerializedName("donations")
+  private int donations;
 
-    @SerializedName("donationsReceived")
-    private int donationsReceived;
+  @SerializedName("donationsReceived")
+  private int donationsReceived;
 
-    @SerializedName("donationsDelta")
-    private int donationsDelta;
+  @SerializedName("donationsDelta")
+  private int donationsDelta;
 
-    @SerializedName("badge")
-    private Badge badge;
+  @SerializedName("badge")
+  private Badge badge;
 
 }

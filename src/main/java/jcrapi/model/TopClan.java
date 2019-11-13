@@ -28,31 +28,31 @@ import lombok.ToString;
 @ToString
 public class TopClan {
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("score")
-    private int score;
+  @SerializedName("score")
+  private int score;
 
-    @SerializedName("memberCount")
-    private int memberCount;
+  @SerializedName("memberCount")
+  private int memberCount;
 
-    @SerializedName("rank")
-    private int rank;
+  @SerializedName("rank")
+  private int rank;
 
-    @SerializedName("previousRank")
-    private int previousRank;
+  @SerializedName("previousRank")
+  private int previousRank;
 
-    @SerializedName("badge")
-    private Badge badge;
+  @SerializedName("badge")
+  private Badge badge;
 
-    @SerializedName("location")
-    private Location location;
+  @SerializedName("location")
+  private Location location;
 
-    @SerializedName("tracking")
-    private Tracking tracking;
+  @SerializedName("tracking")
+  private Tracking tracking;
 
 }

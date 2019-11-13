@@ -1,6 +1,6 @@
 # Java CR-API Connector
 
-## Actual version: v12.0.160-RC6
+## Actual version: v12.0.236-RC5
 
 ## Simplest Usage ##
 
@@ -99,6 +99,18 @@ List<TopClan> topClansForEu = api.getTopClans(TopClanRequest.builder()
 ```java
 // get top players
 List<TopPlayer> topPlayersForEu = api.getTopPlayers(TopPlayerRequest.builder()
+    .locationKey("EU")
+    .keys(Arrays.asList("name", "clan", "tag"))
+    .excludes(Arrays.asList("battles"))
+    .limit(10)
+    .max(5)
+    .page(2)
+    .build());
+```
+
+```java
+// get top Wars
+List<TopWar> topWarsForEu = api.getTopWars(TopWarRequest.builder()
     .locationKey("EU")
     .keys(Arrays.asList("name", "clan", "tag"))
     .excludes(Arrays.asList("battles"))
@@ -344,6 +356,27 @@ AuthStats authStats = api.getAuthStats(AuthStatsRequest.builder()
 ```
 
 ```java
+// get constants
+Constants constants = api.getConstants(ConstantsRequest.builder()
+    .keys(Arrays.asList("name", "clan", "tag"))
+    .excludes(Arrays.asList("battles"))
+    .limit(10)
+    .max(5)
+    .page(2)
+    .build());
+```
+
+```java
+// get status
+Status status = api.getStatus();
+```
+
+```java
+// get health
+String health = api.getHealth();
+```
+
+```java
 // get thread safe last response object from last request 
 Response response = api.getLastResponse();
 
@@ -351,7 +384,6 @@ String raw = response.getRaw();
 Map<String, String> responseHeaders = response.getResponseHeaders();
 int rateLimit = response.getRateLimit();
 int rateRemaining = response.getRateRemaining();
-
 ```
 
 ## How to bind the bintray repository ##

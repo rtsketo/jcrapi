@@ -28,16 +28,16 @@ import lombok.ToString;
 @ToString
 public class ClanChest {
 
-    @SerializedName("status")
-    private String status;
+  @SerializedName("status")
+  private String status;
 
-    @SerializedName("crowns")
-    private int crowns;
+  @SerializedName("crowns")
+  private int crowns;
 
-    @SerializedName("level")
-    private int level;
+  @SerializedName("level")
+  private int level;
 
-    @SerializedName("maxLevel")
-    private int maxLevel;
+  @SerializedName("maxLevel")
+  private int maxLevel;
 
 }

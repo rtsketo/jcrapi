@@ -28,53 +28,56 @@ import lombok.ToString;
 @ToString
 public class Profile {
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("rank")
-    private int rank;
+  @Deprecated
+  @SerializedName("rank")
+  private int rank;
 
-    @SerializedName("trophies")
-    private int trophies;
+  @SerializedName("trophies")
+  private int trophies;
 
-    @SerializedName("arena")
-    private Arena arena;
+  @SerializedName("arena")
+  private Arena arena;
 
-    @SerializedName("clan")
-    private ProfileClan clan;
+  @SerializedName("clan")
+  private ProfileClan clan;
 
-    @SerializedName("stats")
-    private Stats stats;
+  @SerializedName("stats")
+  private Stats stats;
 
-    @SerializedName("games")
-    private Games games;
+  @SerializedName("games")
+  private Games games;
 
-    @SerializedName("chestCycle")
-    private ChestCycle chestCycle;
+  @Deprecated
+  @SerializedName("chestCycle")
+  private ChestCycle chestCycle;
 
-    @SerializedName("leagueStatistics")
-    private LeagueStatistics leagueStatistics;
+  @SerializedName("leagueStatistics")
+  private LeagueStatistics leagueStatistics;
 
-    @SerializedName("currentDeck")
-    private java.util.List<Card> currentDeck;
+  @SerializedName("currentDeck")
+  private java.util.List<Card> currentDeck;
 
-    @SerializedName("cards")
-    private java.util.List<Card> cards;
+  @SerializedName("cards")
+  private java.util.List<Card> cards;
 
-    @Deprecated
-    @SerializedName("achievments")
-    private java.util.List<Achievment> achievments;
+  @Deprecated
+  @SerializedName("achievments")
+  private java.util.List<Achievment> achievments;
 
-    @SerializedName("achievements")
-    private java.util.List<Achievement> achievements;
+  @SerializedName("achievements")
+  private java.util.List<Achievement> achievements;
 
-    @SerializedName("battles")
-    private java.util.List<Battle> battles;
+  @Deprecated
+  @SerializedName("battles")
+  private java.util.List<Battle> battles;
 
-    @SerializedName("deckLink")
-    private String deckLink;
+  @SerializedName("deckLink")
+  private String deckLink;
 
 }

@@ -28,43 +28,43 @@ import lombok.ToString;
 @ToString
 public class JoinableTournament {
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("open")
-    private boolean open;
+  @SerializedName("open")
+  private boolean open;
 
-    @SerializedName("maxPlayers")
-    private int maxPlayers;
+  @SerializedName("maxPlayers")
+  private int maxPlayers;
 
-    @SerializedName("currentPlayers")
-    private int currentPlayers;
+  @SerializedName("currentPlayers")
+  private int currentPlayers;
 
-    @SerializedName("status")
-    private String status;
+  @SerializedName("status")
+  private String status;
 
-    @SerializedName("createTime")
-    private long createTime;
+  @SerializedName("createTime")
+  private long createTime;
 
-    @SerializedName("prepTime")
-    private int prepTime;
+  @SerializedName("prepTime")
+  private int prepTime;
 
-    @SerializedName("startTime")
-    private String startTime;
+  @SerializedName("startTime")
+  private String startTime;
 
-    @SerializedName("endTime")
-    private String endTime;
+  @SerializedName("endTime")
+  private String endTime;
 
-    @SerializedName("duration")
-    private int duration;
+  @SerializedName("duration")
+  private int duration;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    @SerializedName("updatedAt")
-    private long updatedAt;
+  @SerializedName("updatedAt")
+  private long updatedAt;
 
 }

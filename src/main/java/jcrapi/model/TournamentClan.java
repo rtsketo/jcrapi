@@ -28,13 +28,13 @@ import lombok.ToString;
 @ToString
 public class TournamentClan {
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("badgeId")
-    private int badgeId;
+  @SerializedName("badgeId")
+  private int badgeId;
 
 }

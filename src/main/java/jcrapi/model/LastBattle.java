@@ -28,10 +28,10 @@ import lombok.ToString;
 @ToString
 public class LastBattle {
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("type")
+  private String type;
 
-    @SerializedName("time")
-    private long time;
+  @SerializedName("time")
+  private long time;
 
 }

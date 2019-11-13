@@ -26,26 +26,26 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class IconUrlsTest {
 
-    private IconUrls unitUnderTest;
+  private IconUrls unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new IconUrls();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new IconUrls();
+  }
 
-    @Test
-    public void shouldGetSetMedium() {
-        String expected = "astring";
-        unitUnderTest.setMedium(expected);
-        assertEquals(expected, unitUnderTest.getMedium());
-    }
+  @Test
+  public void shouldGetSetMedium() {
+    String expected = "astring";
+    unitUnderTest.setMedium(expected);
+    assertEquals(expected, unitUnderTest.getMedium());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setMedium("astring");
-        String expected = "IconUrls(medium=astring)";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setMedium("astring");
+    String expected = "IconUrls(medium=astring)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

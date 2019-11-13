@@ -28,19 +28,19 @@ import lombok.ToString;
 @ToString
 public class ClanHistoryElement {
 
-    @SerializedName("donations")
-    private Integer donations;
+  @SerializedName("donations")
+  private Integer donations;
 
-    @SerializedName("memberCount")
-    private Integer memberCount;
+  @SerializedName("memberCount")
+  private Integer memberCount;
 
-    @SerializedName("members")
-    private java.util.List<ClanHistoryMember> members;
+  @SerializedName("members")
+  private java.util.List<ClanHistoryMember> members;
 
-    @SerializedName("score")
-    private Integer score;
+  @SerializedName("score")
+  private Integer score;
 
-    @SerializedName("crowns")
-    private int crowns;
+  @SerializedName("crowns")
+  private int crowns;
 
 }

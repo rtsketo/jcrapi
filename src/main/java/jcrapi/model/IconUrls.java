@@ -28,7 +28,7 @@ import lombok.ToString;
 @ToString
 public class IconUrls {
 
-    @SerializedName("medium")
-    private String medium;
+  @SerializedName("medium")
+  private String medium;
 
 }

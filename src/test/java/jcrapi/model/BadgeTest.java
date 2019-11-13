@@ -26,50 +26,50 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class BadgeTest {
 
-    private Badge unitUnderTest;
+  private Badge unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new Badge();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new Badge();
+  }
 
-    @Test
-    public void shouldGetSetName() {
-        String expected = "astring";
-        unitUnderTest.setName(expected);
-        assertEquals(expected, unitUnderTest.getName());
-    }
+  @Test
+  public void shouldGetSetName() {
+    String expected = "astring";
+    unitUnderTest.setName(expected);
+    assertEquals(expected, unitUnderTest.getName());
+  }
 
-    @Test
-    public void shouldGetSetCategory() {
-        String expected = "astring";
-        unitUnderTest.setCategory(expected);
-        assertEquals(expected, unitUnderTest.getCategory());
-    }
+  @Test
+  public void shouldGetSetCategory() {
+    String expected = "astring";
+    unitUnderTest.setCategory(expected);
+    assertEquals(expected, unitUnderTest.getCategory());
+  }
 
-    @Test
-    public void shouldGetSetId() {
-        int expected = 815;
-        unitUnderTest.setId(expected);
-        assertEquals(expected, unitUnderTest.getId());
-    }
+  @Test
+  public void shouldGetSetId() {
+    int expected = 815;
+    unitUnderTest.setId(expected);
+    assertEquals(expected, unitUnderTest.getId());
+  }
 
-    @Test
-    public void shouldGetSetImage() {
-        String expected = "astring";
-        unitUnderTest.setImage(expected);
-        assertEquals(expected, unitUnderTest.getImage());
-    }
+  @Test
+  public void shouldGetSetImage() {
+    String expected = "astring";
+    unitUnderTest.setImage(expected);
+    assertEquals(expected, unitUnderTest.getImage());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setName("astring");
-        unitUnderTest.setCategory("astring");
-        unitUnderTest.setId(815);
-        unitUnderTest.setImage("astring");
-        String expected = "Badge(name=astring, category=astring, id=815, image=astring)";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setName("astring");
+    unitUnderTest.setCategory("astring");
+    unitUnderTest.setId(815);
+    unitUnderTest.setImage("astring");
+    String expected = "Badge(name=astring, category=astring, id=815, image=astring)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

@@ -26,50 +26,58 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class ClanTrackingTest {
 
-    private ClanTracking unitUnderTest;
+  private ClanTracking unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new ClanTracking();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new ClanTracking();
+  }
 
-    @Test
-    public void shouldGetSetTag() {
-        String expected = "astring";
-        unitUnderTest.setTag(expected);
-        assertEquals(expected, unitUnderTest.getTag());
-    }
+  @Test
+  public void shouldGetSetTag() {
+    String expected = "astring";
+    unitUnderTest.setTag(expected);
+    assertEquals(expected, unitUnderTest.getTag());
+  }
 
-    @Test
-    public void shouldGetSetActive() {
-        boolean expected = false;
-        unitUnderTest.setActive(expected);
-        assertEquals(expected, unitUnderTest.isActive());
-    }
+  @Test
+  public void shouldGetSetActive() {
+    boolean expected = false;
+    unitUnderTest.setActive(expected);
+    assertEquals(expected, unitUnderTest.isActive());
+  }
 
-    @Test
-    public void shouldGetSetAvailable() {
-        boolean expected = false;
-        unitUnderTest.setAvailable(expected);
-        assertEquals(expected, unitUnderTest.isAvailable());
-    }
+  @Test
+  public void shouldGetSetAvailable() {
+    boolean expected = false;
+    unitUnderTest.setAvailable(expected);
+    assertEquals(expected, unitUnderTest.isAvailable());
+  }
 
-    @Test
-    public void shouldGetSetSnapshotCount() {
-        int expected = 815;
-        unitUnderTest.setSnapshotCount(expected);
-        assertEquals(expected, unitUnderTest.getSnapshotCount());
-    }
+  @Test
+  public void shouldGetSetSnapshotCount() {
+    int expected = 815;
+    unitUnderTest.setSnapshotCount(expected);
+    assertEquals(expected, unitUnderTest.getSnapshotCount());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setTag("astring");
-        unitUnderTest.setActive(false);
-        unitUnderTest.setAvailable(false);
-        unitUnderTest.setSnapshotCount(815);
-        String expected = "ClanTracking(tag=astring, active=false, available=false, snapshotCount=815)";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldGetSetLegible() {
+    boolean expected = false;
+    unitUnderTest.setLegible(expected);
+    assertEquals(expected, unitUnderTest.isLegible());
+  }
+
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setTag("astring");
+    unitUnderTest.setActive(false);
+    unitUnderTest.setAvailable(false);
+    unitUnderTest.setSnapshotCount(815);
+    unitUnderTest.setLegible(false);
+    String expected = "ClanTracking(tag=astring, active=false, available=false, snapshotCount=815, legible=false)";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

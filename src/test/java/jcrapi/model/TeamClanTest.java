@@ -26,42 +26,42 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class TeamClanTest {
 
-    private TeamClan unitUnderTest;
+  private TeamClan unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new TeamClan();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new TeamClan();
+  }
 
-    @Test
-    public void shouldGetSetTag() {
-        String expected = "astring";
-        unitUnderTest.setTag(expected);
-        assertEquals(expected, unitUnderTest.getTag());
-    }
+  @Test
+  public void shouldGetSetTag() {
+    String expected = "astring";
+    unitUnderTest.setTag(expected);
+    assertEquals(expected, unitUnderTest.getTag());
+  }
 
-    @Test
-    public void shouldGetSetName() {
-        String expected = "astring";
-        unitUnderTest.setName(expected);
-        assertEquals(expected, unitUnderTest.getName());
-    }
+  @Test
+  public void shouldGetSetName() {
+    String expected = "astring";
+    unitUnderTest.setName(expected);
+    assertEquals(expected, unitUnderTest.getName());
+  }
 
-    @Test
-    public void shouldGetSetBadge() {
-        Badge expected = new Badge();
-        unitUnderTest.setBadge(expected);
-        assertEquals(expected, unitUnderTest.getBadge());
-    }
+  @Test
+  public void shouldGetSetBadge() {
+    Badge expected = new Badge();
+    unitUnderTest.setBadge(expected);
+    assertEquals(expected, unitUnderTest.getBadge());
+  }
 
-    @Test
-    public void shouldToString() {
-        unitUnderTest.setTag("astring");
-        unitUnderTest.setName("astring");
-        unitUnderTest.setBadge(new Badge());
-        String expected = "TeamClan(tag=astring, name=astring, badge=" + new Badge() + ")";
-        String actual = unitUnderTest.toString();
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void shouldToString() {
+    unitUnderTest.setTag("astring");
+    unitUnderTest.setName("astring");
+    unitUnderTest.setBadge(new Badge());
+    String expected = "TeamClan(tag=astring, name=astring, badge=" + new Badge() + ")";
+    String actual = unitUnderTest.toString();
+    assertEquals(expected, actual);
+  }
 
 }

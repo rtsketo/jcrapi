@@ -28,16 +28,20 @@ import lombok.ToString;
 @ToString
 public class ClanWarLog {
 
-    @SerializedName("createdDate")
-    private long createdDate;
+  @Deprecated
+  @SerializedName("createdDate")
+  private long createdDate;
 
-    @SerializedName("seasonNumber")
-    private int seasonNumber;
+  @SerializedName("seasonNumber")
+  private int seasonNumber;
 
-    @SerializedName("participants")
-    private java.util.List<ClanWarLogParticipant> participants;
+  @SerializedName("participants")
+  private java.util.List<ClanWarLogParticipant> participants;
 
-    @SerializedName("standings")
-    private java.util.List<ClanWarLogStanding> standings;
+  @SerializedName("standings")
+  private java.util.List<ClanWarLogStanding> standings;
+
+  @SerializedName("warEndTime")
+  private String warEndTime;
 
 }

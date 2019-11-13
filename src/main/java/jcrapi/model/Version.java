@@ -16,11 +16,11 @@
  */
 package jcrapi.model;
 
+import javax.annotation.Generated;
+import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
-import javax.annotation.Generated;
 
 @Generated("org.mili.generator")
 @Getter
@@ -28,6 +28,6 @@ import javax.annotation.Generated;
 @ToString
 public class Version {
 
-    public static final String VERSION = "v12.0.160";
+  public static final String VERSION = "v12.0.236";
 
 }

@@ -28,52 +28,64 @@ import lombok.ToString;
 @ToString
 public class OpenTournament {
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("type")
+  private String type;
 
-    @SerializedName("status")
-    private String status;
+  @SerializedName("status")
+  private String status;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("capacity")
-    private int capacity;
+  @SerializedName("capacity")
+  private int capacity;
 
-    @Deprecated
-    @SerializedName("playerCount")
-    private int playerCount;
+  @Deprecated
+  @SerializedName("playerCount")
+  private int playerCount;
 
-    @SerializedName("currentPlayers")
-    private int currentPlayers;
+  @SerializedName("currentPlayers")
+  private int currentPlayers;
 
-    @Deprecated
-    @SerializedName("maxCapacity")
-    private int maxCapacity;
+  @Deprecated
+  @SerializedName("maxCapacity")
+  private int maxCapacity;
 
-    @SerializedName("maxPlayers")
-    private int maxPlayers;
+  @SerializedName("maxPlayers")
+  private int maxPlayers;
 
-    @Deprecated
-    @SerializedName("preparationDuration")
-    private int preparationDuration;
+  @Deprecated
+  @SerializedName("preparationDuration")
+  private int preparationDuration;
 
-    @SerializedName("prepTime")
-    private int prepTime;
+  @SerializedName("prepTime")
+  private int prepTime;
 
-    @SerializedName("duration")
-    private int duration;
+  @SerializedName("duration")
+  private int duration;
 
-    @SerializedName("createTime")
-    private long createTime;
+  @SerializedName("createTime")
+  private long createTime;
 
-    @SerializedName("startTime")
-    private String startTime;
+  @SerializedName("updatedAt")
+  private long updatedAt;
 
-    @SerializedName("endTime")
-    private String endTime;
+  @SerializedName("startTime")
+  private String startTime;
+
+  @SerializedName("endTime")
+  private String endTime;
+
+  @SerializedName("description")
+  private String description;
+
+  @SerializedName("open")
+  private boolean open;
+
+  @SerializedName("members")
+  private java.util.List<Member> members;
 
 }

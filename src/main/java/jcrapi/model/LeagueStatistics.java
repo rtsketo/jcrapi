@@ -28,13 +28,13 @@ import lombok.ToString;
 @ToString
 public class LeagueStatistics {
 
-    @SerializedName("currentSeason")
-    private CurrentSeason currentSeason;
+  @SerializedName("currentSeason")
+  private CurrentSeason currentSeason;
 
-    @SerializedName("previousSeason")
-    private PreviousSeason previousSeason;
+  @SerializedName("previousSeason")
+  private PreviousSeason previousSeason;
 
-    @SerializedName("bestSeason")
-    private BestSeason bestSeason;
+  @SerializedName("bestSeason")
+  private BestSeason bestSeason;
 
 }

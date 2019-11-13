@@ -26,12 +26,12 @@ import static org.junit.Assert.assertEquals;
 @Generated("org.mili.generator")
 public class ClanHistoryTest {
 
-    private ClanHistory unitUnderTest;
+  private ClanHistory unitUnderTest;
 
-    @Before
-    public void setUp() {
-        unitUnderTest = new ClanHistory();
-    }
+  @Before
+  public void setUp() {
+    unitUnderTest = new ClanHistory();
+  }
 
 
 }

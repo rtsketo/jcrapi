@@ -28,46 +28,51 @@ import lombok.ToString;
 @ToString
 public class Battle {
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("type")
+  private String type;
 
-    @SerializedName("challengeType")
-    private String challengeType;
+  @Deprecated
+  @SerializedName("challengeType")
+  private String challengeType;
 
-    @SerializedName("mode")
-    private BattleMode mode;
+  @SerializedName("mode")
+  private BattleMode mode;
 
-    @SerializedName("winCountBefore")
-    private int winCountBefore;
+  @SerializedName("winCountBefore")
+  private int winCountBefore;
 
-    @SerializedName("utcTime")
-    private long utcTime;
+  @SerializedName("utcTime")
+  private long utcTime;
 
-    @SerializedName("deckType")
-    private String deckType;
+  @SerializedName("deckType")
+  private String deckType;
 
-    @SerializedName("teamSize")
-    private int teamSize;
+  @SerializedName("teamSize")
+  private int teamSize;
 
-    @SerializedName("winner")
-    private int winner;
+  @SerializedName("winner")
+  private int winner;
 
-    @SerializedName("teamCrowns")
-    private int teamCrowns;
+  @SerializedName("teamCrowns")
+  private int teamCrowns;
 
-    @SerializedName("opponentCrowns")
-    private int opponentCrowns;
+  @SerializedName("opponentCrowns")
+  private int opponentCrowns;
 
-    @SerializedName("team")
-    private java.util.List<Team> team;
+  @SerializedName("team")
+  private java.util.List<Team> team;
 
-    @SerializedName("opponent")
-    private java.util.List<Team> opponent;
+  @SerializedName("opponent")
+  private java.util.List<Team> opponent;
 
-    @SerializedName("arena")
-    private Arena arena;
+  @SerializedName("arena")
+  private Arena arena;
 
-    @SerializedName("tournamentTag")
-    private String tournamentTag;
+  @Deprecated
+  @SerializedName("tournamentTag")
+  private String tournamentTag;
+
+  @SerializedName("challenge")
+  private Challenge challenge;
 
 }

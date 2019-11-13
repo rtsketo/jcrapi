@@ -28,10 +28,10 @@ import lombok.ToString;
 @ToString
 public class Popularity {
 
-    @SerializedName("hits")
-    private String hits;
+  @SerializedName("hits")
+  private String hits;
 
-    @SerializedName("hitsPerDayAvg")
-    private double hitsPerDayAvg;
+  @SerializedName("hitsPerDayAvg")
+  private double hitsPerDayAvg;
 
 }

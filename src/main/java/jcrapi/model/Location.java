@@ -28,13 +28,13 @@ import lombok.ToString;
 @ToString
 public class Location {
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("isCountry")
-    private boolean Country;
+  @SerializedName("isCountry")
+  private boolean Country;
 
-    @SerializedName("code")
-    private String code;
+  @SerializedName("code")
+  private String code;
 
 }

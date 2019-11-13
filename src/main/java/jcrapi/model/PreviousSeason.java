@@ -28,16 +28,16 @@ import lombok.ToString;
 @ToString
 public class PreviousSeason {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("rank")
-    private int rank;
+  @SerializedName("rank")
+  private int rank;
 
-    @SerializedName("trophies")
-    private int trophies;
+  @SerializedName("trophies")
+  private int trophies;
 
-    @SerializedName("bestTrophies")
-    private int bestTrophies;
+  @SerializedName("bestTrophies")
+  private int bestTrophies;
 
 }

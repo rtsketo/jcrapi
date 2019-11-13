@@ -28,34 +28,34 @@ import lombok.ToString;
 @ToString
 public class TopPlayer {
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("tag")
-    private String tag;
+  @SerializedName("tag")
+  private String tag;
 
-    @SerializedName("rank")
-    private int rank;
+  @SerializedName("rank")
+  private int rank;
 
-    @SerializedName("previousRank")
-    private int previousRank;
+  @SerializedName("previousRank")
+  private int previousRank;
 
-    @SerializedName("expLevel")
-    private int expLevel;
+  @SerializedName("expLevel")
+  private int expLevel;
 
-    @SerializedName("trophies")
-    private int trophies;
+  @SerializedName("trophies")
+  private int trophies;
 
-    @SerializedName("donationsDelta")
-    private int donationsDelta;
+  @SerializedName("donationsDelta")
+  private int donationsDelta;
 
-    @SerializedName("clanChestCrowns")
-    private int clanChestCrowns;
+  @SerializedName("clanChestCrowns")
+  private int clanChestCrowns;
 
-    @SerializedName("clan")
-    private TeamClan clan;
+  @SerializedName("clan")
+  private TeamClan clan;
 
-    @SerializedName("arena")
-    private Arena arena;
+  @SerializedName("arena")
+  private Arena arena;
 
 }

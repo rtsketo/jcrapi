@@ -28,22 +28,22 @@ import lombok.ToString;
 @ToString
 public class ClanWar {
 
-    @SerializedName("state")
-    private String state;
+  @SerializedName("state")
+  private String state;
 
-    @SerializedName("warEndTime")
-    private long warEndTime;
+  @SerializedName("warEndTime")
+  private long warEndTime;
 
-    @SerializedName("collectionEndTime")
-    private long collectionEndTime;
+  @SerializedName("collectionEndTime")
+  private long collectionEndTime;
 
-    @SerializedName("clan")
-    private ClanWarClan clan;
+  @SerializedName("clan")
+  private ClanWarClan clan;
 
-    @SerializedName("participants")
-    private java.util.List<ClanWarParticipant> participants;
+  @SerializedName("participants")
+  private java.util.List<ClanWarParticipant> participants;
 
-    @SerializedName("standings")
-    private java.util.List<ClanWarStanding> standings;
+  @SerializedName("standings")
+  private java.util.List<ClanWarStanding> standings;
 
 }
